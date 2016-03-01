@@ -4,8 +4,8 @@ MAINTAINER sala "saladinkzn@gmail.com"
 
 ENV ANDROID_HOME /opt/android-sdk-linux
 ENV PATH ${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
-ARG sdkVersion=r24.4.1
-ARG buildTools=23.0.2
+ENV sdkVersion=r24.4.1
+ENV buildTools=23.0.2
 
 RUN apt-get update -qq && apt-get install -y --no-install-recommends openjdk-7-jdk wget lib32stdc++6 lib32z1 && apt-get clean
 
