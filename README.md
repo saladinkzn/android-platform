@@ -1,3 +1,5 @@
+[![](https://badge.imagelayers.io/saladinkzn/android-platform:latest.svg)](https://imagelayers.io/?images=saladinkzn/android-platform:latest 'Get your own badge on imagelayers.io')
+
 About
 ---------------
 
