@@ -12,7 +12,7 @@ RUN apt-get update -qq && apt-get install -y --no-install-recommends openjdk-7-j
 RUN cd /opt && wget https://dl.google.com/android/android-sdk_$sdkVersion-linux.tgz && \
     tar xzf android-sdk_$sdkVersion-linux.tgz && rm -f android-sdk_$sdkVersion-linux.tgz
 
-RUN echo y | android update sdk --filter platform-tools,build-tools-$buildTools,android-23,extra-google-m2repository,extra-android-m2repository --no-ui --force
+RUN echo y | android update sdk --all --filter platform-tools,build-tools-$buildTools,android-23,extra-google-m2repository,extra-android-m2repository --no-ui --force
 
 RUN mkdir /workdir
 WORKDIR /workdir
